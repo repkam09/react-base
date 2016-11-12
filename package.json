@@ -1,0 +1,23 @@
+{
+  "name": "react-repka",
+  "version": "1.0.0",
+  "description": "A Reactjs boilerplate for my personal workflow",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -t [ babelify ] src/index.js -o build/bundle.js",
+    "serve": "http-server ./build/"
+  },
+  "author": "Mark Repka",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babelify": "^7.3.0",
+    "http-server": "^0.9.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0"
+  }
+}
