@@ -1,4 +1,8 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-const ExampleComponent = require("./react/example.jsx");
-ReactDOM.render(<ExampleComponent />, document.getElementById('example'));
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
