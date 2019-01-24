@@ -1,12 +1,17 @@
 import React, { Component } from "react";
-import * as jsonexample from "./example.json";
+import jsondata from "./example.json";
 
-export default class Example extends Component {
+class Example extends Component {
     render() {
         return (
-            <div>
-                {jsonexample}
-            </div>
+            <>
+                <h3>Example Json Import</h3>
+                <div className="example-json-data">
+                    {JSON.stringify(jsondata)}
+                </div>
+            </>
         )
     }
 }
+
+export { Example };

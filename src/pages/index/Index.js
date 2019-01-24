@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './Index.css';
-import Example from "../examples/Examples";
+import { Example } from "../examples/Examples";
+import { FetchApiData } from "../examples/FetchApiData";
+import { ChangeOnTimer } from "../examples/ChangeOnTimer";
 
 class Index extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <Example />
+          <h3>Repka React Base</h3>
         </header>
+        <section>
+          <Example />
+        </section>
+        <section>
+          <FetchApiData />
+        </section>
+        <section>
+          <ChangeOnTimer />
+        </section>
       </div>
     );
   }
