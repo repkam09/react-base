@@ -4,13 +4,17 @@ import PropTypes from 'prop-types';
 class TextInput extends Component {
     render() {
         return (
-            <input type="text" />
+            <input type="text" defaultValue={this.props.defaultValue} />
         );
     }
 }
 
 TextInput.propTypes = {
-    text: PropTypes.string
+    defaultValue: PropTypes.string
+}
+
+TextInput.defaultProps = {
+    defaultValue: "Default Value"
 }
 
 export { TextInput };

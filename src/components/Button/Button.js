@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
+import "./Button.css";
 
 /**
  * A generic button class that handles many things! 
@@ -7,15 +8,19 @@ import PropTypes from 'prop-types';
 class Button extends Component {
     render() {
         return (
-            <div>
+            <button className="generic-button">
                 {this.props.text}
-            </div>
+            </button>
         );
     }
 }
 
 Button.propTypes = {
-    text: PropTypes.string
+    text: PropTypes.string     /* This is the text prop */
+}
+
+Button.defaultProps = {
+    text: "Example Button"
 }
 
 export { Button };

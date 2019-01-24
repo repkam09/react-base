@@ -10,5 +10,10 @@ module.exports = {
         config.devServer.disableHostCheck = true;
 
         return config;
+    },
+    defaultExample: true,
+    theme: {
+    },
+    styles: {
     }
 };

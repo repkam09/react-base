@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './Index.css';
+import Example from "../examples/Examples";
 
 class Index extends Component {
   render() {
@@ -19,6 +20,7 @@ class Index extends Component {
           >
             Learn React
           </a>
+          <Example />
         </header>
       </div>
     );
